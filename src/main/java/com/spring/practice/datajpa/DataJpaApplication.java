@@ -57,9 +57,7 @@ public class DataJpaApplication {
             // fetch customers by last name
             log.info("Customer found with findByLastName('Bauer'):");
             log.info("--------------------------------------------");
-            repository.findByLastName("Bauer").forEach(bauer -> {
-                log.info(bauer.toString());
-            });
+            repository.findByLastName("Bauer").forEach(bauer -> log.info(bauer.toString()));
             log.info("");
         };
     }
